@@ -51,4 +51,16 @@ public class ProjectService {
 		projectRepository.delete(project);
 	}
 
+	/* Update - 1st try
+	 * public void updateProject(Project p) { String projectid =
+	 * p.getProjectIdentifier(); Project project =
+	 * projectRepository.findByProjectIdentifier(projectid.toUpperCase());
+	 * 
+	 * if (project == null) { throw new ProjectIdException(
+	 * "Cannot update project with ID '" + projectid +
+	 * "'. This project does not exist"); }
+	 * 
+	 * p.setProjectIdentifier(p.getProjectIdentifier().toUpperCase());
+	 * projectRepository.save(p); }
+	 */
 }
