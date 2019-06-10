@@ -1,5 +1,0 @@
-package io.HCL.ppmtool.repositories;
-
-public interface ProjectTaskRepository {
-
-}

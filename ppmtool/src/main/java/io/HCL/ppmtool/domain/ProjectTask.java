@@ -13,7 +13,7 @@ public class ProjectTask {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(updatable = false)
+	@Column(updatable = false, unique = true)
 	private String projectSequence;
 	@NotBlank(message = "Please include a project summary")
 	private String summary;
@@ -22,7 +22,7 @@ public class ProjectTask {
 	private Integer priority;
 	private Date dueDate;
 	// ManyToOne with Backlog
-	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REFRESH)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "backlog_id", updatable = false, nullable = false)
 	@JsonIgnore
 	private Backlog backlog;
@@ -136,14 +136,14 @@ public class ProjectTask {
 	/**
 	 * @return the projectIdentifer
 	 */
-	public String getProjectIdentifer() {
+	public String getProjectIdentifier() {
 		return projectIdentifier;
 	}
 
 	/**
 	 * @param projectIdentifer the projectIdentifer to set
 	 */
-	public void setProjectIdentifer(String projectIdentifier) {
+	public void setProjectIdentifier(String projectIdentifier) {
 		this.projectIdentifier = projectIdentifier;
 	}
 
