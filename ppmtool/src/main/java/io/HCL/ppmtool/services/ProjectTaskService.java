@@ -1,10 +1,12 @@
 package io.HCL.ppmtool.services;
 
 import io.HCL.ppmtool.domain.Backlog;
+import io.HCL.ppmtool.domain.Project;
 import io.HCL.ppmtool.domain.ProjectTask;
 import io.HCL.ppmtool.exceptions.ProjectIdException;
 import io.HCL.ppmtool.exceptions.ProjectNotFoundException;
 import io.HCL.ppmtool.repositories.BacklogRepository;
+import io.HCL.ppmtool.repositories.ProjectRepository;
 import io.HCL.ppmtool.repositories.ProjectTaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,6 +19,10 @@ public class ProjectTaskService {
 
 	@Autowired
 	private ProjectTaskRepository projectTaskRepository;
+
+	@Autowired
+
+	private ProjectRepository projectRepository;
 
 	public ProjectTask addProjectTask(String projectIdentifier, ProjectTask projectTask) {
 
@@ -42,7 +48,7 @@ public class ProjectTaskService {
 		projectTask.setProjectIdentifier(projectIdentifier);
 
 		// INITIAL priority when priority null
-		if (projectTask.getPriority() == null) {
+		if (projectTask.getPriority() == 0 || projectTask.getPriority() == null) {
 			projectTask.setPriority(3);
 		}
 		// INITIAL status when status is null
@@ -54,6 +60,12 @@ public class ProjectTaskService {
 	}
 
 	public Iterable<ProjectTask> findBacklogById(String backlog_id) {
+		Project project = projectRepository.findByProjectIdentifier(backlog_id);
+		if (project == null) {
+
+			throw new ProjectNotFoundException("Project with ID: '" + backlog_id + "' does not exist");
+
+		}
 
 		return projectTaskRepository.findByProjectIdentifierOrderByPriority(backlog_id);
 	}
