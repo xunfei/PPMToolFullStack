@@ -36,6 +36,12 @@ public class Project {
 	@JsonIgnore
 	private Backlog backlog;
 
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JsonIgnore
+	private User user;
+
+	private String projectLeader;
+
 	public Project() {
 	}
 
@@ -163,6 +169,34 @@ public class Project {
 	 */
 	public void setBacklog(Backlog backlog) {
 		this.backlog = backlog;
+	}
+
+	/**
+	 * @return the user
+	 */
+	public User getUser() {
+		return user;
+	}
+
+	/**
+	 * @param user the user to set
+	 */
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	/**
+	 * @return the projectLeader
+	 */
+	public String getProjectLeader() {
+		return projectLeader;
+	}
+
+	/**
+	 * @param projectLeader the projectLeader to set
+	 */
+	public void setProjectLeader(String projectLeader) {
+		this.projectLeader = projectLeader;
 	}
 
 	@PrePersist

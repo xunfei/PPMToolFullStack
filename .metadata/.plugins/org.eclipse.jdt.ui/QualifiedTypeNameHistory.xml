@@ -22,7 +22,15 @@
 <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="antlr.collections.List"/>
-<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="io.HCL.ppmtool.exceptions.ProjectNotFoundException"/>
+<fullyQualifiedTypeName name="io.HCL.ppmtool.domain.Project"/>
+<fullyQualifiedTypeName name="io.HCL.ppmtool.repositories.ProjectRepository"/>
+<fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetails"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+<fullyQualifiedTypeName name="io.HCL.ppmtool.domain.User"/>
+<fullyQualifiedTypeName name="io.HCL.ppmtool.exceptions.UsernameAlreadyExistsException"/>
+<fullyQualifiedTypeName name="io.HCL.ppmtool.validator.UserValidator"/>
 </qualifiedTypeNameHistroy>

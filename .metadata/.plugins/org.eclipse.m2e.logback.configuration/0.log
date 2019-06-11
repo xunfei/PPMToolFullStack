@@ -5276,3 +5276,341 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2019-06-10 11:58:35,509 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2019-06-10 11:58:35,511 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-06-10 11:58:35,511 [Worker-141: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-10 13:44:01,472 [Worker-163: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-10 13:45:44,976 [Worker-163: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/2.1.5.RELEASE/spring-boot-starter-security-2.1.5.RELEASE.pom
+2019-06-10 13:47:25,721 [Worker-163: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.pom
+2019-06-10 13:49:06,225 [Worker-163: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/0.9.0/jjwt-0.9.0.pom
+2019-06-10 13:49:10,870 [Worker-163: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 13:49:10,870 [Worker-163: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 13:49:10,870 [Worker-163: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 13:49:10,870 [Worker-163: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 13:49:10,870 [Worker-163: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-10 13:49:14,613 [Worker-148: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-10 13:49:18,170 [Worker-148: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 13:49:18,170 [Worker-148: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 13:49:18,170 [Worker-148: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 13:49:18,170 [Worker-148: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 13:49:18,170 [Worker-148: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-10 13:50:52,506 [Worker-171: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/2.1.5.RELEASE/spring-boot-starter-security-2.1.5.RELEASE-sources.jar
+2019-06-10 13:50:52,607 [Worker-171: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.springframework.boot:spring-boot-starter-security:2.1.5.RELEASE
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-security:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:254) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.300.v20190215-2048.jar:na]
+2019-06-10 13:52:33,444 [Worker-171: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5-sources.jar
+2019-06-10 13:52:33,562 [Worker-171: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for com.google.code.gson:gson:2.8.5
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.google.code.gson:gson:jar:sources:2.8.5
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:254) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.300.v20190215-2048.jar:na]
+2019-06-10 13:54:14,036 [Worker-171: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/0.9.0/jjwt-0.9.0-sources.jar
+2019-06-10 13:54:14,067 [Worker-171: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for io.jsonwebtoken:jjwt:0.9.0
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.jsonwebtoken:jjwt:jar:sources:0.9.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:254) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.300.v20190215-2048.jar:na]
+2019-06-10 13:55:55,636 [Worker-167: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/2.1.5.RELEASE/spring-boot-starter-security-2.1.5.RELEASE-javadoc.jar
+2019-06-10 13:55:55,651 [Worker-167: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.springframework.boot:spring-boot-starter-security:2.1.5.RELEASE
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-security:jar:javadoc:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:265) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.300.v20190215-2048.jar:na]
+2019-06-10 13:57:36,402 [Worker-167: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5-javadoc.jar
+2019-06-10 13:57:36,434 [Worker-167: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for com.google.code.gson:gson:2.8.5
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.google.code.gson:gson:jar:javadoc:2.8.5
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:265) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.300.v20190215-2048.jar:na]
+2019-06-10 13:59:17,059 [Worker-167: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/0.9.0/jjwt-0.9.0-javadoc.jar
+2019-06-10 13:59:17,074 [Worker-167: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for io.jsonwebtoken:jjwt:0.9.0
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.jsonwebtoken:jjwt:jar:javadoc:0.9.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:763) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:731) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:708) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:265) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1336) [org.eclipse.m2e.core_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135) [org.eclipse.m2e.jdt_1.11.0.20190220-2119.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.300.v20190215-2048.jar:na]
+2019-06-10 14:03:49,670 [Worker-171: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-10 14:03:51,891 [Worker-171: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-10 14:03:55,564 [Worker-171: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/main/java
+2019-06-10 14:03:55,564 [Worker-171: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-10 14:03:55,565 [Worker-171: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-10 14:03:55,566 [Worker-171: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/test/java
+2019-06-10 14:03:57,480 [Worker-171: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 7 sec
+2019-06-10 14:03:59,010 [Worker-176: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 14:03:59,010 [Worker-176: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-10 14:03:59,029 [Worker-176: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 14:03:59,032 [Worker-176: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 14:03:59,033 [Worker-176: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-10 18:43:28,815 [Worker-214: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-10 18:43:39,440 [Worker-214: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-10 18:43:51,913 [Worker-214: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/main/java
+2019-06-10 18:43:51,913 [Worker-214: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-10 18:43:51,913 [Worker-214: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-10 18:43:51,913 [Worker-214: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/test/java
+2019-06-10 18:43:56,014 [Worker-214: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 27 sec
+2019-06-10 18:43:59,131 [Worker-214: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 18:43:59,148 [Worker-214: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-10 18:43:59,180 [Worker-214: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 18:43:59,184 [Worker-214: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 18:43:59,184 [Worker-214: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-10 18:45:05,308 [Worker-219: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 18:45:05,309 [Worker-219: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-10 18:45:05,331 [Worker-219: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 18:45:05,334 [Worker-219: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 18:45:05,334 [Worker-219: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-10 18:45:35,700 [Worker-214: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 18:45:35,700 [Worker-214: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-10 18:45:35,714 [Worker-214: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 18:45:35,716 [Worker-214: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 18:45:35,717 [Worker-214: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-10 18:45:56,620 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2019-06-10 18:46:11,083 [Worker-216: Launching ppmtool (3)] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool
+2019-06-10 18:46:11,083 [Worker-216: Launching ppmtool (3)] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2019-06-10 22:44:39,530 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2019-06-10 22:44:40,411 [Worker-227: Cleaning all projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-10 22:44:53,935 [Worker-230: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE-sources.jar
+2019-06-10 22:44:54,368 [Worker-230: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE-sources.jar
+2019-06-10 22:44:55,262 [Worker-230: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.security:spring-security-config:5.1.5.RELEASE
+2019-06-10 22:44:55,323 [Worker-230: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar
+2019-06-10 22:44:55,577 [Worker-230: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE-sources.jar
+2019-06-10 22:44:55,728 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 22:44:55,730 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-10 22:44:55,771 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 22:44:55,773 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 22:44:55,773 [Worker-228: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-10 22:44:55,989 [Worker-230: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.security:spring-security-core:5.1.5.RELEASE
+2019-06-10 22:44:56,048 [Worker-230: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar
+2019-06-10 22:44:56,319 [Worker-230: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar
+2019-06-10 22:44:56,647 [Worker-230: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.security:spring-security-web:5.1.5.RELEASE
+2019-06-10 22:45:00,631 [Worker-230: Launching ppmtool (4)] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool
+2019-06-10 22:45:00,631 [Worker-230: Launching ppmtool (4)] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Ppom.xml -B clean install
+2019-06-10 22:50:12,169 [Worker-228: Build Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-10 22:50:21,504 [Worker-228: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 22:50:21,530 [Worker-228: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 22:50:21,530 [Worker-228: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 22:50:21,537 [Worker-228: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 22:50:21,537 [Worker-228: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-10 22:50:21,809 [Worker-233: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-10 22:50:26,238 [Worker-233: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-10 22:50:33,927 [Worker-233: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/main/java
+2019-06-10 22:50:33,927 [Worker-233: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-10 22:50:33,927 [Worker-233: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-10 22:50:33,933 [Worker-233: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/test/java
+2019-06-10 22:50:37,814 [Worker-233: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 16 sec
+2019-06-10 22:54:28,665 [Worker-229: Launching ppmtool (4)] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool
+2019-06-10 22:54:28,666 [Worker-229: Launching ppmtool (4)] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Ppom.xml -B clean install
+2019-06-10 22:55:42,895 [Worker-238: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 22:55:42,895 [Worker-238: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-10 22:55:42,946 [Worker-238: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-10 22:55:42,946 [Worker-238: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-10 22:55:42,962 [Worker-238: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 10:42:36,498 [Worker-264: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 10:42:36,510 [Worker-264: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 10:42:36,546 [Worker-264: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 10:42:36,549 [Worker-264: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 10:42:36,550 [Worker-264: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 10:59:48,494 [Worker-265: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 10:59:48,496 [Worker-265: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 10:59:48,505 [Worker-265: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 10:59:48,510 [Worker-265: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 10:59:48,510 [Worker-265: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 11:01:57,166 [Worker-268: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-11 11:02:04,978 [Worker-268: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-11 11:02:16,254 [Worker-268: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/main/java
+2019-06-11 11:02:16,254 [Worker-268: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-11 11:02:16,254 [Worker-268: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-11 11:02:16,254 [Worker-268: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/test/java
+2019-06-11 11:02:19,934 [Worker-268: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 22 sec
+2019-06-11 11:03:24,240 [Worker-281: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 11:03:24,241 [Worker-281: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 11:03:24,285 [Worker-281: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 11:03:24,289 [Worker-281: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 11:03:24,289 [Worker-281: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 11:07:58,859 [Worker-284: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 11:07:58,859 [Worker-284: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 11:07:58,901 [Worker-284: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 11:07:58,901 [Worker-284: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 11:07:58,901 [Worker-284: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 11:22:30,471 [Worker-292: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 11:22:30,473 [Worker-292: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 11:22:30,488 [Worker-292: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 11:22:30,490 [Worker-292: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 11:22:30,490 [Worker-292: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 11:36:39,650 [Worker-289: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 11:36:39,662 [Worker-289: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 11:36:39,696 [Worker-289: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 11:36:39,699 [Worker-289: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 11:36:39,700 [Worker-289: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 11:54:07,187 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-06-11 11:54:18,462 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2019-06-11 11:55:12,191 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-06-11 11:55:22,417 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2019-06-11 12:03:51,070 [Worker-17: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 12:03:51,089 [Worker-17: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 12:03:51,117 [Worker-17: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 12:03:51,121 [Worker-17: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 12:03:51,122 [Worker-17: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 13:27:04,249 [Worker-29: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 13:27:04,279 [Worker-29: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 13:27:04,303 [Worker-29: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 13:27:04,308 [Worker-29: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 13:27:04,308 [Worker-29: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 13:59:33,652 [Worker-44: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 13:59:33,656 [Worker-44: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 13:59:33,665 [Worker-44: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 13:59:33,667 [Worker-44: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 13:59:33,668 [Worker-44: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 15:27:29,644 [Worker-70: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 15:27:29,645 [Worker-70: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 15:27:29,657 [Worker-70: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 15:27:29,659 [Worker-70: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 15:27:29,659 [Worker-70: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 15:31:17,506 [Worker-73: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-11 15:31:21,237 [Worker-73: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-11 15:31:26,220 [Worker-73: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/main/java
+2019-06-11 15:31:26,221 [Worker-73: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-11 15:31:26,221 [Worker-73: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-11 15:31:26,222 [Worker-73: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/test/java
+2019-06-11 15:31:28,018 [Worker-73: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 10 sec
+2019-06-11 15:31:41,102 [Worker-88: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 15:31:41,102 [Worker-88: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 15:31:41,122 [Worker-88: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 15:31:41,125 [Worker-88: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 15:31:41,125 [Worker-88: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 15:32:38,163 [Worker-85: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-11 15:32:40,390 [Worker-85: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-11 15:32:44,365 [Worker-85: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/main/java
+2019-06-11 15:32:44,366 [Worker-85: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-11 15:32:44,367 [Worker-85: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-11 15:32:44,367 [Worker-85: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/test/java
+2019-06-11 15:32:46,012 [Worker-85: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 7 sec
+2019-06-11 15:37:26,814 [Worker-91: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-11 15:37:28,738 [Worker-91: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-11 15:37:32,858 [Worker-91: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/main/java
+2019-06-11 15:37:32,859 [Worker-91: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-11 15:37:32,859 [Worker-91: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-11 15:37:32,860 [Worker-91: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/test/java
+2019-06-11 15:37:34,331 [Worker-91: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 7 sec
+2019-06-11 15:37:43,536 [Worker-101: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 15:37:43,537 [Worker-101: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 15:37:43,558 [Worker-101: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 15:37:43,560 [Worker-101: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 15:37:43,560 [Worker-101: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 15:51:51,029 [Worker-104: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 15:51:51,034 [Worker-104: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 15:51:51,046 [Worker-104: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 15:51:51,048 [Worker-104: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 15:51:51,048 [Worker-104: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 16:03:27,171 [Worker-99: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 16:03:27,174 [Worker-99: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 16:03:27,184 [Worker-99: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 16:03:27,187 [Worker-99: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 16:03:27,187 [Worker-99: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 16:16:05,336 [Worker-113: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 16:16:05,338 [Worker-113: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 16:16:05,347 [Worker-113: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 16:16:05,349 [Worker-113: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 16:16:05,349 [Worker-113: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 16:45:47,352 [Worker-116: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 16:45:47,354 [Worker-116: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 16:45:47,363 [Worker-116: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 16:45:47,365 [Worker-116: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 16:45:47,365 [Worker-116: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 17:34:49,562 [Worker-143: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 17:34:49,564 [Worker-143: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 17:34:49,574 [Worker-143: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 17:34:49,575 [Worker-143: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 17:34:49,575 [Worker-143: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-11 17:51:10,460 [Worker-124: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 17:51:10,462 [Worker-124: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-11 17:51:10,472 [Worker-124: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-06-11 17:51:10,474 [Worker-124: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 17:51:10,474 [Worker-124: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
