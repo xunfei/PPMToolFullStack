@@ -11012,3 +11012,69 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:02:53.576
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qtOyMIrP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:02:53.622
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.qtOyMIrP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:02:53.629
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:02:53.634
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qtOyMIrP => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.296
+!MESSAGE Boot LS startup time from start to initialized: 8156ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.398
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.FQqKLoLf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.406
+!MESSAGE subscribing to classpath changes: sts4.classpath.FQqKLoLf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.411
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.416
+!MESSAGE subsribers = [sts4.classpath.FQqKLoLf]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.421
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.426
+!MESSAGE project ppmtool ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.431
+!MESSAGE Preparing classpath changed notification ppmtool
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.435
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.440
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.445
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.FQqKLoLf => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.460
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.465
+!MESSAGE executing callback sts4.classpath.FQqKLoLf ppmtool false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:03:07.519
+!MESSAGE executing callback sts4.classpath.FQqKLoLf SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:19:58.635
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FQqKLoLf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:19:58.640
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.FQqKLoLf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:19:58.645
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-06-12 17:19:58.650
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FQqKLoLf => OK
