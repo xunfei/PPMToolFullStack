@@ -60,11 +60,28 @@ class ProjectBoard extends Component {
 
     BoardContent = boardAlgorithm(errors, project_tasks);
 
+    //fix the bug where people can access the createPT page on an invalid project
+    let CreatePTButton;
+    const createPTButtonAlg = errors => {
+      if (errors.projectNotFound || errors.projectIdentifier) {
+        return (
+          <button className="btn btn-primary mb-3" disabled>
+            <i className="fas fa-plus-circle"> Create Project Task</i>
+          </button>
+        );
+      } else {
+        return (
+          <Link to={`/addProjectTask/${id}`} className="btn btn-primary mb-3">
+            <i className="fas fa-plus-circle"> Create Project Task</i>
+          </Link>
+        );
+      }
+    };
+    CreatePTButton = createPTButtonAlg(errors);
+
     return (
       <div className="container">
-        <Link to={`/addProjectTask/${id}`} className="btn btn-primary mb-3">
-          <i className="fas fa-plus-circle"> Create Project Task</i>
-        </Link>
+        {CreatePTButton}
         <br />
         <hr />
         {BoardContent}
