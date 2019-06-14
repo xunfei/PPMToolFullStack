@@ -14,9 +14,6 @@ class Backlog extends Component {
 
   async onDrop(e, newStatus) {
     let project_task = JSON.parse(e.dataTransfer.getData("projectTask"));
-    console.log(
-      "old status:" + project_task.status + ", new status: " + newStatus
-    );
     project_task.status = newStatus;
     await this.props.updateProjectTaskStatus(project_task);
     await this.props.getBacklog(project_task.projectIdentifier);

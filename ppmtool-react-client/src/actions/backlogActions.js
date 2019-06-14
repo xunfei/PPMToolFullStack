@@ -33,6 +33,11 @@ export const getBacklog = backlog_id => async dispatch => {
       type: GET_BACKLOG,
       payload: res.data
     });
+    //get rid of error when success
+    dispatch({
+      type: GET_ERRORS,
+      payload: {}
+    });
   } catch (err) {
     dispatch({
       type: GET_ERRORS,
