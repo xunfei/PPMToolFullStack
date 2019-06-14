@@ -5664,3 +5664,37 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact io.jsonwebtok
 2019-06-13 15:47:10,091 [Worker-21: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-06-13 15:47:10,091 [Worker-21: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
 2019-06-13 20:46:36,645 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-06-13 21:37:47,933 [Worker-37: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-13 21:37:56,922 [Worker-37: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-13 21:38:06,815 [Worker-37: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/main/java
+2019-06-13 21:38:06,817 [Worker-37: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-13 21:38:06,820 [Worker-37: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-13 21:38:06,824 [Worker-37: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/test/java
+2019-06-13 21:38:09,473 [Worker-37: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 21 sec
+2019-06-13 21:38:18,533 [Worker-41: Launching Executing clean in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool
+2019-06-13 21:38:18,534 [Worker-41: Launching Executing clean in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2019-06-13 21:39:52,961 [Worker-41: Launching Executing install in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool
+2019-06-13 21:39:52,962 [Worker-41: Launching Executing install in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2019-06-13 22:11:53,207 [Worker-57: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-13 22:11:53,225 [Worker-57: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-13 22:11:53,254 [Worker-57: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 21 resources
+2019-06-13 22:11:53,900 [Worker-57: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-13 22:11:53,901 [Worker-57: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-13 22:18:07,347 [Worker-62: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-13 22:18:10,951 [Worker-62: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-13 22:18:18,114 [Worker-62: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/main/java
+2019-06-13 22:18:18,116 [Worker-62: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-13 22:18:18,117 [Worker-62: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-13 22:18:18,119 [Worker-62: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/test/java
+2019-06-13 22:18:21,084 [Worker-62: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 13 sec
+2019-06-13 22:18:35,048 [Worker-61: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-13 22:18:37,887 [Worker-61: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-13 22:18:43,738 [Worker-61: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/main/java
+2019-06-13 22:18:43,738 [Worker-61: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-13 22:18:43,739 [Worker-61: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-13 22:18:43,740 [Worker-61: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/test/java
+2019-06-13 22:18:45,703 [Worker-61: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 10 sec
+2019-06-13 22:20:50,243 [Worker-69: Launching Executing clean in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool
+2019-06-13 22:20:50,243 [Worker-69: Launching Executing clean in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2019-06-13 22:21:07,194 [Worker-71: Launching Executing install in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool
+2019-06-13 22:21:07,195 [Worker-71: Launching Executing install in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
