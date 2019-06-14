@@ -5698,3 +5698,29 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact io.jsonwebtok
 2019-06-13 22:20:50,243 [Worker-69: Launching Executing clean in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
 2019-06-13 22:21:07,194 [Worker-71: Launching Executing install in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool
 2019-06-13 22:21:07,195 [Worker-71: Launching Executing install in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2019-06-14 11:07:10,019 [Worker-93: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-14 11:07:10,025 [Worker-93: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-14 11:07:10,090 [Worker-93: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 21 resources
+2019-06-14 11:07:11,142 [Worker-93: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-14 11:07:11,142 [Worker-93: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-14 11:26:53,006 [Worker-116: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-14 11:26:53,051 [Worker-116: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-14 11:26:53,071 [Worker-116: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 21 resources
+2019-06-14 11:26:53,125 [Worker-116: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-14 11:26:53,125 [Worker-116: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-14 11:30:19,762 [Worker-101: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-14 11:30:19,799 [Worker-101: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-14 11:30:19,817 [Worker-101: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 21 resources
+2019-06-14 11:30:19,877 [Worker-101: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-14 11:30:19,878 [Worker-101: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-14 11:31:49,548 [Worker-116: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-06-14 11:31:55,799 [Worker-116: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: io.HCL:ppmtool:0.0.1-SNAPSHOT @ C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\pom.xml.
+2019-06-14 11:32:07,521 [Worker-116: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/main/java
+2019-06-14 11:32:07,521 [Worker-116: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-14 11:32:07,522 [Worker-116: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ppmtool/src/main/resources
+2019-06-14 11:32:07,524 [Worker-116: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ppmtool/src/test/java
+2019-06-14 11:32:12,218 [Worker-116: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 22 sec
+2019-06-14 11:32:39,849 [Worker-121: Launching Executing clean in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool
+2019-06-14 11:32:39,849 [Worker-121: Launching Executing clean in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2019-06-14 11:32:59,406 [Worker-101: Launching Executing install in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool
+2019-06-14 11:32:59,406 [Worker-101: Launching Executing install in C__Users_xunfei.zheng_Desktop_PPMToolFullStack_ppmtool] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install

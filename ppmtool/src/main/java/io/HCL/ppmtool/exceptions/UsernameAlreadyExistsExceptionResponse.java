@@ -1,26 +1,24 @@
 package io.HCL.ppmtool.exceptions;
 
 public class UsernameAlreadyExistsExceptionResponse {
-	private String usernameAlreadyExists;
+	private String username;
 
-	public UsernameAlreadyExistsExceptionResponse(String usernameAlreadyExists) {
-		this.usernameAlreadyExists = usernameAlreadyExists;
+	public UsernameAlreadyExistsExceptionResponse(String username) {
+		this.username = username;
 	}
 
 	/**
-	 * @return the usernameAlreadyExists
+	 * @return the username
 	 */
-	public String getUsernameAlreadyExists() {
-		return usernameAlreadyExists;
+	public String getUsername() {
+		return username;
 	}
 
 	/**
-	 * @param usernameAlreadyExists the usernameAlreadyExists to set
+	 * @param username the username to set
 	 */
-	public void setUsernameAlreadyExists(String usernameAlreadyExists) {
-		this.usernameAlreadyExists = usernameAlreadyExists;
+	public void setUsername(String username) {
+		this.username = username;
 	}
-	
-	
 
 }
