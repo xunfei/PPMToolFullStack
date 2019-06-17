@@ -38,7 +38,14 @@ class ProjectTask extends Component {
       >
         <div className={`card-header text-primary ${priorityClass}`}>
           ID: {project_task.projectSequence} -- Priority: {priorityString}
+          <div>
+            Due Date:{" "}
+            {project_task.dueDate == "9999-12-31"
+              ? "N/A"
+              : project_task.dueDate}
+          </div>
         </div>
+
         <div className="card-body bg-light">
           <h5 className="card-title">{project_task.summary}</h5>
           <p className="card-text text-truncate ">

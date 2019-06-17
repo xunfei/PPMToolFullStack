@@ -76,7 +76,7 @@ class UpdateProjectTask extends Component {
       acceptanceCriteria: this.state.acceptanceCriteria,
       status: this.state.status,
       priority: this.state.priority,
-      dueDate: this.state.dueDate,
+      dueDate: this.state.dueDate || "9999-12-31",
       projectIdentifier: this.state.projectIdentifier,
       create_At: this.state.create_At
     };

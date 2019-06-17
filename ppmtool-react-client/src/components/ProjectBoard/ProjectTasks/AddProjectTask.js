@@ -42,7 +42,7 @@ class AddProjectTask extends Component {
       acceptanceCriteria: this.state.acceptanceCriteria,
       status: this.state.status,
       priority: this.state.priority,
-      dueDate: this.state.dueDate
+      dueDate: this.state.dueDate || "9999-12-31"
     };
     this.props.addProjectTask(
       this.state.projectIdentifier,

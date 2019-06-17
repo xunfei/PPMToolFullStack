@@ -1,21 +1,15 @@
 package io.HCL.ppmtool.services;
 
 import io.HCL.ppmtool.domain.Backlog;
-import io.HCL.ppmtool.domain.Project;
 import io.HCL.ppmtool.domain.ProjectTask;
-import io.HCL.ppmtool.exceptions.ProjectIdException;
 import io.HCL.ppmtool.exceptions.ProjectNotFoundException;
-import io.HCL.ppmtool.repositories.BacklogRepository;
-import io.HCL.ppmtool.repositories.ProjectRepository;
 import io.HCL.ppmtool.repositories.ProjectTaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ProjectTaskService {
-
-	@Autowired
-	private BacklogRepository backlogRepository;
 
 	@Autowired
 	private ProjectTaskRepository projectTaskRepository;
@@ -53,9 +47,22 @@ public class ProjectTaskService {
 		return projectTaskRepository.save(projectTask);
 	}
 
-	public Iterable<ProjectTask> findBacklogById(String backlog_id, String username) {
+	public Iterable<ProjectTask> findBacklogById(String backlog_id, String sort, String username) {
+		// check for exception
 		projectService.findProjectByIdentifier(backlog_id, username);
-		return projectTaskRepository.findByProjectIdentifierOrderByPriority(backlog_id);
+		
+		//sort by due date and put nulls at the end.--------the nullsLast does not work. 
+		Sort nullsLast = Sort.by(Sort.Order.asc("dueDate").nullsLast());
+
+		// sort: 0=Priority (default), 1=DueDate, 2=ProjectSequence
+		if (sort.equals("1")) {
+			return projectTaskRepository.findByProjectIdentifier(backlog_id, nullsLast);
+		} else if (sort.equals("2")) {
+			return projectTaskRepository.findByProjectIdentifierOrderByProjectSequence(backlog_id);
+		} else {
+			return projectTaskRepository.findByProjectIdentifierOrderByPriority(backlog_id);
+		}
+
 	}
 
 	public ProjectTask findPTByProjectSequence(String backlog_id, String pt_id, String username) {

@@ -4,6 +4,7 @@ import Backlog from "./Backlog";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { getBacklog } from "../../actions/backlogActions";
+import { Dropdown } from "react-bootstrap";
 
 class ProjectBoard extends Component {
   //constructor to handle errors
@@ -12,6 +13,7 @@ class ProjectBoard extends Component {
     this.state = {
       errors: {}
     };
+    this.onSortActionClick = this.onSortActionClick.bind(this);
   }
 
   componentDidMount() {
@@ -24,6 +26,12 @@ class ProjectBoard extends Component {
       this.setState({ errors: nextProps.errors });
     }
   }
+
+  onSortActionClick(e, sort) {
+    const { id } = this.props.match.params;
+    this.props.getBacklog(id, sort);
+  }
+
   render() {
     const { id } = this.props.match.params;
     const { project_tasks } = this.props.backlog;
@@ -83,6 +91,23 @@ class ProjectBoard extends Component {
       <div className="container">
         {CreatePTButton}
         <br />
+        <Dropdown>
+          <Dropdown.Toggle variant="outline-primary" id="dropdown-basic">
+            Sort By:
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item onClick={e => this.onSortActionClick(e, "0")}>
+              Priority
+            </Dropdown.Item>
+            <Dropdown.Item onClick={e => this.onSortActionClick(e, "1")}>
+              Due Date
+            </Dropdown.Item>
+            <Dropdown.Item onClick={e => this.onSortActionClick(e, "2")}>
+              Project Sequence
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
         <hr />
         {BoardContent}
       </div>

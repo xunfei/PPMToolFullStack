@@ -26,9 +26,9 @@ export const addProjectTask = (
   }
 };
 
-export const getBacklog = backlog_id => async dispatch => {
+export const getBacklog = (backlog_id, sort) => async dispatch => {
   try {
-    const res = await axios.get(`/api/backlog/${backlog_id}`);
+    const res = await axios.get(`/api/backlog/${backlog_id}?sort=${sort}`);
     dispatch({
       type: GET_BACKLOG,
       payload: res.data
