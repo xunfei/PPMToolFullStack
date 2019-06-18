@@ -8,6 +8,17 @@ import {
 import PropTypes from "prop-types";
 
 class Backlog extends Component {
+  constructor() {
+    super();
+    this.state = {
+      sortBy: ""
+    };
+  }
+
+  componentDidMount() {
+    this.setState({ sortBy: this.props.sortBy });
+  }
+
   onDragOver(e) {
     e.preventDefault();
   }
@@ -16,7 +27,11 @@ class Backlog extends Component {
     let project_task = JSON.parse(e.dataTransfer.getData("projectTask"));
     project_task.status = newStatus;
     await this.props.updateProjectTaskStatus(project_task);
-    await this.props.getBacklog(project_task.projectIdentifier);
+    await this.props.getBacklog(
+      project_task.projectIdentifier,
+      this.props.sortBy
+    );
+    console.log(this.props.sortBy);
   }
 
   render() {
@@ -92,11 +107,16 @@ class Backlog extends Component {
 }
 
 Backlog.propTypes = {
+  sortBy: PropTypes.string.isRequired,
   updateProjectTaskStatus: PropTypes.func.isRequired,
   getBacklog: PropTypes.func.isRequired
 };
 
+const mapStateToProps = state => ({
+  sortBy: state.sortBy
+});
+
 export default connect(
-  null,
+  mapStateToProps,
   { getBacklog, updateProjectTaskStatus }
 )(Backlog);

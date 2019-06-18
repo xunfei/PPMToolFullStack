@@ -11,6 +11,7 @@ class ProjectBoard extends Component {
   constructor() {
     super();
     this.state = {
+      sortBy: "0",
       errors: {}
     };
     this.onSortActionClick = this.onSortActionClick.bind(this);
@@ -18,7 +19,7 @@ class ProjectBoard extends Component {
 
   componentDidMount() {
     const { id } = this.props.match.params;
-    this.props.getBacklog(id);
+    this.props.getBacklog(id, this.state.sortBy);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -27,9 +28,10 @@ class ProjectBoard extends Component {
     }
   }
 
-  onSortActionClick(e, sort) {
+  onSortActionClick(e, sortBy) {
     const { id } = this.props.match.params;
-    this.props.getBacklog(id, sort);
+    this.props.getBacklog(id, sortBy);
+    this.setState({ sortBy: sortBy });
   }
 
   render() {
@@ -100,9 +102,11 @@ class ProjectBoard extends Component {
             <Dropdown.Item onClick={e => this.onSortActionClick(e, "0")}>
               Priority
             </Dropdown.Item>
+            <Dropdown.Divider />
             <Dropdown.Item onClick={e => this.onSortActionClick(e, "1")}>
               Due Date
             </Dropdown.Item>
+            <Dropdown.Divider />
             <Dropdown.Item onClick={e => this.onSortActionClick(e, "2")}>
               Project Sequence
             </Dropdown.Item>
@@ -122,6 +126,7 @@ ProjectBoard.propTypes = {
 };
 
 const mapStateToProps = state => ({
+  sortBy: state.sortBy,
   backlog: state.backlog,
   errors: state.errors
 });

@@ -2,13 +2,32 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { logout } from "../../actions/securityActions";
+import { logout, nameChange } from "../../actions/securityActions";
+import { NavDropdown } from "react-bootstrap";
 
 class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      changedName: ""
+    };
+    this.onChangeNameClick = this.onChangeNameClick.bind(this);
+  }
   logout() {
     this.props.logout();
     window.location.href = "/";
   }
+
+  onChangeNameClick(e) {
+    //this.setState({ changeName: true });
+    const newName = window.prompt("Enter new name: ");
+    if (newName) {
+      const { user } = this.props.security;
+      this.props.nameChange(user.username, newName);
+      this.setState({ changedName: newName });
+    }
+  }
+
   render() {
     const { validToken, user } = this.props.security;
 
@@ -24,10 +43,18 @@ class Header extends Component {
 
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link className="nav-link" to="/dashboard">
-              <i className="fas fa-user-circle mr-1" />
-              {user.fullName}
-            </Link>
+            <NavDropdown
+              title={this.state.changedName || user.fullName}
+              id="basic-nav-dropdown"
+            >
+              <NavDropdown.Item onClick={this.onChangeNameClick}>
+                Change Name
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Colleague List
+              </NavDropdown.Item>
+            </NavDropdown>
           </li>
           <li className="nav-item">
             <Link
@@ -89,6 +116,7 @@ class Header extends Component {
 }
 
 Header.propTypes = {
+  nameChange: PropTypes.func.isRequired,
   logout: PropTypes.func.isRequired,
   security: PropTypes.object.isRequired
 };
@@ -99,5 +127,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { logout }
+  { logout, nameChange }
 )(Header);

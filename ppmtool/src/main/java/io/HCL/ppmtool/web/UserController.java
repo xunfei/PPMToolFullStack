@@ -16,6 +16,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -73,5 +75,13 @@ public class UserController {
 		User newUser = userService.saveUser(user);
 
 		return new ResponseEntity<User>(newUser, HttpStatus.CREATED);
+	}
+	
+	@PatchMapping("/nameChange/{username}/{newName}")
+	public ResponseEntity<?> registerUser(@PathVariable String username, @PathVariable String newName) {
+
+		User updatedUser = userService.updateName(username, newName);
+
+		return new ResponseEntity<User>(updatedUser, HttpStatus.ACCEPTED);
 	}
 }

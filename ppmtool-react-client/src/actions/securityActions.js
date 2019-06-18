@@ -52,3 +52,18 @@ export const logout = () => dispatch => {
     payload: {}
   });
 };
+
+export const nameChange = (username, newName) => async dispatch => {
+  try {
+    await axios.patch(`/api/users/nameChange/${username}/${newName}`);
+    dispatch({
+      type: GET_ERRORS,
+      payload: {}
+    });
+  } catch (err) {
+    dispatch({
+      type: GET_ERRORS,
+      payload: err.response.data
+    });
+  }
+};

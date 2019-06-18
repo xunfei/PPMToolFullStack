@@ -40,7 +40,7 @@ class ProjectTask extends Component {
           ID: {project_task.projectSequence} -- Priority: {priorityString}
           <div>
             Due Date:{" "}
-            {project_task.dueDate == "9999-12-31"
+            {project_task.dueDate === "9999-12-31"
               ? "N/A"
               : project_task.dueDate}
           </div>

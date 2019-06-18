@@ -31,5 +31,17 @@ public class UserService {
 		}
 
 	}
+	
+	public User updateName(String username, String newName) {
+		try {
+			User user = userRepository.findByUsername(username);
+			user.setFullName(newName);
+			return userRepository.save(user);
+		} catch (Exception ex) {
+			//need to rework
+			throw new UsernameAlreadyExistsException("Username '" + username + "' already exists");
+		}
+
+	}
 
 }
