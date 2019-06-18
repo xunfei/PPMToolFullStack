@@ -19,11 +19,9 @@ class Header extends Component {
   }
 
   onChangeNameClick(e) {
-    //this.setState({ changeName: true });
     const newName = window.prompt("Enter new name: ");
     if (newName) {
-      const { user } = this.props.security;
-      this.props.nameChange(user.username, newName);
+      this.props.nameChange(newName);
       this.setState({ changedName: newName });
     }
   }
@@ -49,10 +47,6 @@ class Header extends Component {
             >
               <NavDropdown.Item onClick={this.onChangeNameClick}>
                 Change Name
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Colleague List
               </NavDropdown.Item>
             </NavDropdown>
           </li>

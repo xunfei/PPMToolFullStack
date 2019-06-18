@@ -1,13 +1,14 @@
 import {
   GET_BACKLOG,
   GET_PROJECT_TASK,
-  DELETE_PROJECT_TASK
+  DELETE_PROJECT_TASK,
+  UPDATE_SORT
 } from "../actions/types";
 
 const initialState = {
   project_tasks: [],
   project_task: {},
-  sortBy: "1"
+  sortBy: "0"
 };
 
 export default function(state = initialState, action) {
@@ -30,6 +31,12 @@ export default function(state = initialState, action) {
         project_tasks: state.project_tasks.filter(
           project_task => project_task.projectSequence !== action.payload
         )
+      };
+
+    case UPDATE_SORT:
+      return {
+        ...state,
+        sortBy: action.payload
       };
 
     default:

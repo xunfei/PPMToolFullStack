@@ -15,8 +15,10 @@ class Backlog extends Component {
     };
   }
 
-  componentDidMount() {
-    this.setState({ sortBy: this.props.sortBy });
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.sortBy) {
+      this.setState({ sortBy: nextProps.sortBy });
+    }
   }
 
   onDragOver(e) {
@@ -31,7 +33,6 @@ class Backlog extends Component {
       project_task.projectIdentifier,
       this.props.sortBy
     );
-    console.log(this.props.sortBy);
   }
 
   render() {
@@ -107,16 +108,11 @@ class Backlog extends Component {
 }
 
 Backlog.propTypes = {
-  sortBy: PropTypes.string.isRequired,
   updateProjectTaskStatus: PropTypes.func.isRequired,
   getBacklog: PropTypes.func.isRequired
 };
 
-const mapStateToProps = state => ({
-  sortBy: state.sortBy
-});
-
 export default connect(
-  mapStateToProps,
+  null,
   { getBacklog, updateProjectTaskStatus }
 )(Backlog);

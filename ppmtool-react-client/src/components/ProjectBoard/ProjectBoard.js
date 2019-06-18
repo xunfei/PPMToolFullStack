@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Backlog from "./Backlog";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { getBacklog } from "../../actions/backlogActions";
+import { getBacklog, updateSort } from "../../actions/backlogActions";
 import { Dropdown } from "react-bootstrap";
 
 class ProjectBoard extends Component {
@@ -11,7 +11,7 @@ class ProjectBoard extends Component {
   constructor() {
     super();
     this.state = {
-      sortBy: "0",
+      sortBy: "",
       errors: {}
     };
     this.onSortActionClick = this.onSortActionClick.bind(this);
@@ -30,8 +30,9 @@ class ProjectBoard extends Component {
 
   onSortActionClick(e, sortBy) {
     const { id } = this.props.match.params;
-    this.props.getBacklog(id, sortBy);
     this.setState({ sortBy: sortBy });
+    this.props.updateSort(sortBy);
+    this.props.getBacklog(id, sortBy);
   }
 
   render() {
@@ -64,7 +65,12 @@ class ProjectBoard extends Component {
           );
         }
       } else {
-        return <Backlog project_tasks_prop={project_tasks} />;
+        return (
+          <Backlog
+            project_tasks_prop={project_tasks}
+            sortBy={this.state.sortBy}
+          />
+        );
       }
     };
 
@@ -122,16 +128,17 @@ class ProjectBoard extends Component {
 ProjectBoard.propTypes = {
   backlog: PropTypes.object.isRequired,
   getBacklog: PropTypes.func.isRequired,
-  errors: PropTypes.object.isRequired
+  errors: PropTypes.object.isRequired,
+  updateSort: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
-  sortBy: state.sortBy,
   backlog: state.backlog,
-  errors: state.errors
+  errors: state.errors,
+  sortBy: state.sortBy
 });
 
 export default connect(
   mapStateToProps,
-  { getBacklog }
+  { getBacklog, updateSort }
 )(ProjectBoard);

@@ -3,7 +3,8 @@ import {
   GET_ERRORS,
   GET_BACKLOG,
   GET_PROJECT_TASK,
-  DELETE_PROJECT_TASK
+  DELETE_PROJECT_TASK,
+  UPDATE_SORT
 } from "./types";
 
 export const addProjectTask = (
@@ -115,4 +116,11 @@ export const deleteProjectTask = (backlog_id, pt_id) => async dispatch => {
       payload: pt_id
     });
   }
+};
+
+export const updateSort = sortBy => dispatch => {
+  dispatch({
+    type: UPDATE_SORT,
+    payload: sortBy
+  });
 };

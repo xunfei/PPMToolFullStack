@@ -5791,3 +5791,8 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact io.jsonwebtok
 2019-06-18 14:27:13,684 [Worker-230: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 21 resources
 2019-06-18 14:27:13,716 [Worker-230: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-06-18 14:27:13,716 [Worker-230: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources
+2019-06-18 15:10:08,217 [Worker-244: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-18 15:10:08,311 [Worker-244: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-06-18 15:10:08,327 [Worker-244: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 21 resources
+2019-06-18 15:10:08,364 [Worker-244: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-18 15:10:08,364 [Worker-244: Launching ppmtool - PpmtoolApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\xunfei.zheng\Desktop\PPMToolFullStack\ppmtool\src\test\resources

@@ -27,6 +27,8 @@ import javax.validation.Valid;
 
 import static io.HCL.ppmtool.security.SecurityConstants.TOKEN_PREFIX;
 
+import java.security.Principal;
+
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
@@ -77,10 +79,10 @@ public class UserController {
 		return new ResponseEntity<User>(newUser, HttpStatus.CREATED);
 	}
 	
-	@PatchMapping("/nameChange/{username}/{newName}")
-	public ResponseEntity<?> registerUser(@PathVariable String username, @PathVariable String newName) {
+	@PatchMapping("/nameChange/{newName}")
+	public ResponseEntity<?> registerUser(@PathVariable String newName, Principal principal) {
 
-		User updatedUser = userService.updateName(username, newName);
+		User updatedUser = userService.updateName(principal.getName(), newName);
 
 		return new ResponseEntity<User>(updatedUser, HttpStatus.ACCEPTED);
 	}
